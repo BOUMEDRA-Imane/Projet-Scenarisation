@@ -1,0 +1,54 @@
+li{
+    display: inline;
+    margin: 10px 5px;
+    
+}
+h1{
+    margin-left: 100px;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    font-family: system-ui;
+}
+h1:hover{
+    color:black;
+}
+
+a{
+    color: white;
+    transition-duration: 1s;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 20px;
+}
+button{
+    width: 110px;
+    margin: 10px 5px;
+    color: rgb(0, 0, 0);
+    box-shadow: 5px 5px 15px #646464;
+    padding: 10px 5px;
+    background-color: rgb(255, 255, 255);
+    border: rgb(21, 84, 167) 2px solid;
+    border-radius: 12px;
+    font-weight: bold;
+}
+a:hover{
+    background-color: white;
+    color: black;
+}
+nav{
+    margin-right: 50px;
+    margin-top: 9px;
+}
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 90px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right,#061d57, #0455b3);
+    color: white;
+}

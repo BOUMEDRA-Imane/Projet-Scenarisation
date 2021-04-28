@@ -1,0 +1,84 @@
+<body><div class="texts">
+    <h1>Création de mon compte personnel</h1>
+    <h2>Définissez les identifiants qui vous permettront de vous connecter à votre compte personnel.</h2>
+    <h3>Les champs marqués * sont obligatoires.</h3>
+</div>
+
+<div class="parts">
+    <form [formGroup]="AuthForm">
+
+        <div class="part1">
+
+            <div class="form-control">
+                <h4>Civilité *</h4>
+                <input type="radio" formControlName="civility" name="civility" value="mlle">
+                <label for="Mlle">Mlle</label>
+                <input type="radio" formControlName="civility" name="civility" value="mme">
+                <label for="Mme">Mme</label>
+                <input type="radio" formControlName="civility" name="civility" value="mr">
+                <label for="Mr">Mr</label> <br>
+            </div>
+
+            <div class="form-control">
+                <h4 for="fname">Prénom *</h4>
+                <input type="text" id="fname" name="fname" placeholder="Votre prénom" size="50px"
+                    formControlName="firstName">
+                
+            </div>
+
+            <div class="form-control">
+                <h4 for="lname">Nom *</h4>
+                <input type="text" id="lname" name="lname" placeholder="Votre nom" size="50px"
+                    formControlName="lastName">
+ 
+            </div>
+
+
+            <div class="form-control">
+                <h4 for="email">Adresse e-mail *</h4>
+                <input type="email" id="email" name="email" placeholder="Votre adresse e-mail" size="50px"
+                    formControlName="email">
+               
+            </div>
+
+
+        </div>
+
+        <div class="part2">
+
+            <div class="form-control">
+                <h4 for="email">Adresse e-mail académique *</h4>
+                <input type="email" id="email" name="email" placeholder="Votre adresse e-mail" size="50px"
+                    formControlName="academicEmail">
+               
+            </div>
+
+
+            <div class="form-control">
+                <h4 for="mdp">Mot de passe (5 caractères minimum) *</h4>
+                <input type="password" id="mdp" name="mdp" placeholder="Votre mot de passe" size="50px"
+                    formControlName="password">
+               
+            </div>
+
+
+            <div class="form-control">
+                <h4 for="mdp2">Confirmation du mot de passe *</h4>
+                <input type="password" id="mdp2" name="mdp2" placeholder="confirmer votre mot de passe" size="50px"
+                    formControlName="confirmPassword">
+              
+                
+            </div>
+
+
+        </div>
+    </form>
+
+    <div class="submit">
+        <!-- <form action=""> -->
+        <input class="button" type="submit" value="S'identifier" (click)="createAccount()">
+        <!-- </form> -->
+    </div>
+
+</div></body>
+<app-footer></app-footer>

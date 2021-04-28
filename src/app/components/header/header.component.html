@@ -1,0 +1,14 @@
+
+<div class="header">
+<h1 routerLink="main" >EsTMooC</h1>
+<nav  *ngIf="user === '' && isUser === false">
+<ul>
+    <li><a href="#">A propos</a></li>
+    <button type="button" routerLink="main">Log In</button>
+</ul>
+</nav>
+<nav *ngIf="user !== '' && isUser === true" style="display: flex;">
+    <h3>Welcome, {{user}}</h3>
+    <button (click)="logOut()">logout</button>
+</nav>
+</div>
