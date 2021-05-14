@@ -1,20 +1,22 @@
 <div class="main">
 <div class="login">
+
 <div class="text">
     <h1>EsTMooC</h1>
     <p>Nous vous aidons à réaliser Le scénario de votre vidéo</p>
 </div>
-<form [formGroup]="AuthForm">
-    <div class="first">
-            <input type="text" class="input1" formControlName="email" placeholder="Email">
-            <input type="password" class="input2" placeholder="Password" formControlName="password">
-            <button class="btn1" (click)="logIn()">Sign In</button>
-            <hr>
-            <button class="btn2" routerLink="/create-account">Create New account</button>
-
-            
-        </div>
-    </form>
+    <form [formGroup]="AuthForm">
+        <div class="first">
+                <input type="text" class="input1" formControlName="email" placeholder="Email">
+                <input type="password" class="input2" placeholder="Password" formControlName="password">
+                <button class="btn1" (click)="logIn()">Sign In</button>
+                <a href="#">forgot the password?</a>
+                <hr>
+                <button class="btn2" routerLink="/create-account">Create New account</button>
+    
+                
+            </div>
+        </form>
 </div>
 </div>
 <app-footer></app-footer>

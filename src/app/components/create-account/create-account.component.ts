@@ -8,6 +8,8 @@ import firebase from 'firebase';
   styleUrls: ['./create-account.component.scss']
 })
 export class CreateAccountComponent implements OnInit {
+  logo:any="assets/img/logo1.png";
+
   // public civility: string;
   public auth = firebase.auth();
   public database = firebase.database().ref()

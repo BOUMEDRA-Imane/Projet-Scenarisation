@@ -25,7 +25,8 @@ firebase.initializeApp(environment.firebaseConfig);
     MainComponent,
     SecondPageComponent,
     CreateAccountComponent,
-    CapsulesComponent
+    CapsulesComponent,
+    
   ],
 
   imports: [

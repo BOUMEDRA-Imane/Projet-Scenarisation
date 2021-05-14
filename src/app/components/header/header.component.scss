@@ -21,6 +21,7 @@ a{
     text-decoration: none;
     font-size: 20px;
 }
+
 button{
     width: 110px;
     margin: 10px 5px;
@@ -41,10 +42,7 @@ nav{
     margin-top: 9px;
 }
 .header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+  
     height: 90px;
     justify-content: space-between;
     display: flex;
