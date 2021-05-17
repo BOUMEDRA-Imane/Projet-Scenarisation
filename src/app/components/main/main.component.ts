@@ -8,6 +8,8 @@ import firebase from 'firebase';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
+  url2:any="./assets/img/lock.jpg";
+
   public auth = firebase.auth();
   public AuthForm = this.fb.group(
     {
@@ -38,10 +40,10 @@ export class MainComponent implements OnInit {
     } else {
 
       this.auth.signInWithEmailAndPassword(email, password).then(ev => {
-        this.route.navigate(['/second-page']);
+        this.route.navigate(['/capsules']);
       }).catch(error => alert(error.message))
 
     }
   }
-  url = "./assets/img/font.jpg"
+  url= "./assets/img/font.jpg";
 }

@@ -7,6 +7,7 @@ import firebase from 'firebase'
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  logo:any="assets/img/plus.png";
 
   private auth = firebase.auth();
   public user: string;

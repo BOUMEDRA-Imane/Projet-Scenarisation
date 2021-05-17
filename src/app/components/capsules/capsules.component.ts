@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import {MatDialog, MatDialogModule} from '@angular/material/dialog';
+import { PopUpComponent } from '../pop-up/pop-up.component';
 @Component({
   selector: 'app-capsules',
   templateUrl: './capsules.component.html',
@@ -8,8 +9,13 @@ import { Component, OnInit } from '@angular/core';
 export class CapsulesComponent implements OnInit {
   cheminImage1:any="assets/img/plus.png";
 
-  constructor() { }
-
+  constructor(private dialogRef:MatDialog) { }
+    openDialog(){
+      this.dialogRef.open(PopUpComponent)
+    }
+    onNoClick(): void {
+      this.dialogRef.closeAll();
+    }
   ngOnInit(): void {
   }
 

@@ -2,22 +2,24 @@
     <h1>Espace de conception</h1>
     <div class="capsule">
     <div class="ajouter">
-        <a href="#"><img class="plus" [src]="cheminImage1" />
-        <h3>Ajouter une scene</h3></a>
+        <img class="plus" [src]="cheminImage1" />
+        <h3>Ajouter une scene</h3>
     </div>
     <div class="ajouter">
-        <a href="#"><img class="plus" [src]="cheminImage2"/>
-        <h3>Ajouter une scene</h3></a>
+        <img class="plus" [src]="cheminImage2"/>
+        <h3>Ajouter une scene</h3>
     </div>
     <div class="ajouter">
-        <a href="#"><img class="plus" [src]="cheminImage3"/>
-        <h3>Ajouter une scene</h3></a>
+        <img class="plus" [src]="cheminImage3"/>
+        <h3>Ajouter une scene</h3>
     </div>
 </div>
 <div class="complementaire">
     <label for="time">Préciser la durée</label>
+    <input type="number" class="time" name="time" placeholder="00" min="0" max="30"> min
 
-    <input type="text" class="time" name="time" placeholder="00:00 min">
+    <input type="number" class="time" name="time" placeholder="00" min="0" max="59"> sec
+
     <label for="story">Ajouter votre script</label>
 
     <textarea id="story" name="story"
@@ -39,4 +41,4 @@
         </div>
     </div>
     
-</div>
+</div>\
