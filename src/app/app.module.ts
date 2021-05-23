@@ -41,8 +41,9 @@ firebase.initializeApp(environment.firebaseConfig);
     ReactiveFormsModule,
     DragDropModule,
     BrowserAnimationsModule,
-    MatDialogModule
-  ],
+    MatDialogModule, 
+    CreateAccountComponent
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
