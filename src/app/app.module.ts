@@ -42,7 +42,6 @@ firebase.initializeApp(environment.firebaseConfig);
     DragDropModule,
     BrowserAnimationsModule,
     MatDialogModule, 
-    CreateAccountComponent
     ],
   providers: [],
   bootstrap: [AppComponent]

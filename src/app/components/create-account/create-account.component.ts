@@ -18,7 +18,7 @@ export class CreateAccountComponent implements OnInit {
       email: ['',
         Validators.compose([
           Validators.required,
-          Validators.email,
+           Validators.email,
         ]),
       ],
       academicEmail: ['',
@@ -63,10 +63,18 @@ export class CreateAccountComponent implements OnInit {
     }
     if (this.AuthForm.invalid) {
       alert('All fields required!')
+      console.log('civility', civility)
+        console.log('confirmPassword', confirmPassword)
+        console.log('password', password)
+        console.log('lastName', lastName)
+        console.log('firstName', firstName)
+        console.log('academicEmail', academicEmail)
+        console.log('email', email) 
+
     } else {
 
       if (password !== confirmPassword) {
-        alert('Password dont match!')
+        alert('Password doesn\'t match!')
       } else {
         this.auth.createUserWithEmailAndPassword(email, password).then(ev => {
           this.database.child(`users/${ev.user.uid}`).set(user).then(() => {
