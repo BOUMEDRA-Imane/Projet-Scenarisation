@@ -29,7 +29,7 @@ export class CreateAccountComponent implements OnInit {
       ],
       firstName: ['', Validators.required],
       lastName: ['', Validators.required],
-      civility: ['', Validators.required],
+      civility: ['Mme', Validators.required],
       password: ['', Validators.required],
       confirmPassword: ['', Validators.required],
 
