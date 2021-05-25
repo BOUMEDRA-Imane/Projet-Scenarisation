@@ -4,10 +4,9 @@ li{
     
 }
 h1{
-    margin-left: 100px;
     font-size: 50px;
     color: rgb(255, 255, 255);
-    font-family: system-ui;
+    margin-top: 10px;
 }
 h1:hover{
     color:black;
@@ -52,4 +51,8 @@ nav{
     align-items: center;
     background-image: linear-gradient(to right,#061d57, #0455b3);
     color: white;
+}
+.logo{
+    height:89px;
+    border-bottom: 1px solid #061d57 ;
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {MatDialog, MatDialogModule} from '@angular/material/dialog';
+import { DispositionComponent } from '../disposition/disposition.component';
 
 @Component({
   selector: 'app-second-page',
@@ -28,10 +30,13 @@ export class SecondPageComponent implements OnInit {
       'cheminImage3',
 
     ]
-  constructor() { 
-    
+  constructor(private dialogRef:MatDialog) { }
+  openDialog(){
+    this.dialogRef.open(DispositionComponent)
   }
-
+  onNoPop():void{
+    this.dialogRef.closeAll();
+  }
   ngOnInit(): void {
     
   }

@@ -8,7 +8,7 @@ import firebase from 'firebase'
 })
 export class HeaderComponent implements OnInit {
   logo:any="assets/img/plus.png";
-
+  logo1:any="assets/img/logo.png"
   private auth = firebase.auth();
   public user: string;
   public isUser = false;

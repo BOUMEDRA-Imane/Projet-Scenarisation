@@ -1,0 +1,60 @@
+
+<div class="conception">
+    <h1>Choisissez votre disposition<button (click)="onNoPop()" class="fermeture">&times;</button></h1>
+
+    <div class="capsule">
+        <div class="disp">
+    <div class="ajouter">
+        <img class="plus" [src]="disposition1" id="dispo1" />
+        <input type="radio" class="check"  id="dis1">
+    </div></div>
+    <div class="disp">
+    <div class="ajouter">
+        <img class="plus" [src]="disposition2" id="dispo2"/>     
+           <input type="radio" id="dis2" class="check" >
+
+    </div></div>
+    <div class="disp">
+    <div class="ajouter">
+        <img class="plus" [src]="disposition3" id="dispo3"/>
+        <input type="radio" class="check" id="dis3" >
+
+    </div></div>
+    <div class="disp">
+    <div class="ajouter">
+        <img class="plus" [src]="disposition4" id="dispo4"/>
+        <input type="radio" class="check"  id="dis4">
+
+    </div></div>
+    <div class="disp">
+    <div class="ajouter">
+        <img class="plus" [src]="disposition5" id="dispo5"/>
+        <input type="radio" class="check" id="dis5" >
+
+    </div></div>
+    </div>
+  
+      <div class="d1">
+    <div class="complementaire1">
+        <label for="time">Préciser la durée</label>
+        <input type="number" class="time" name="time" placeholder="00" min="0" max="30"> min
+    
+        <input type="number" class="time" name="time" placeholder="00" min="0" max="59"> sec
+    </div>
+      
+        <div class="complementaire2">
+        <label for="story">Ajouter votre script</label>
+    
+        <textarea id="story" name="story"
+                  rows="5" cols="60">
+        </textarea>
+    </div> </div>
+    <audio controls class="audio">
+        <source  type="audio/ogg">
+        <source  type="audio/mpeg">
+      </audio>
+<div class="button">
+    <button type="submit" class="btn2" (click)="onNoPop()">Annuler</button></div>
+<button type="submit" class="btn1">valider</button>
+
+</div>

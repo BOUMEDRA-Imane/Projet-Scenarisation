@@ -18,7 +18,7 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
 import { CapsulesComponent } from './components/capsules/capsules.component';
 import { PopUpComponent } from './components/pop-up/pop-up.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { DispositionComponent } from './components/disposition/disposition.component';
 firebase.initializeApp(environment.firebaseConfig);
 @NgModule({
   declarations: [
@@ -30,6 +30,7 @@ firebase.initializeApp(environment.firebaseConfig);
     CreateAccountComponent,
     CapsulesComponent,
     PopUpComponent,
+    DispositionComponent,
     
   ],
 
@@ -42,6 +43,7 @@ firebase.initializeApp(environment.firebaseConfig);
     DragDropModule,
     BrowserAnimationsModule,
     MatDialogModule, 
+
     ],
   providers: [],
   bootstrap: [AppComponent]
