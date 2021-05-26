@@ -1,4 +1,7 @@
-
+.cdk-overlay-pane{
+    overflow: scroll;
+    height: 90%;
+}
 .capsule{
     display: flex;
     flex-direction: row;

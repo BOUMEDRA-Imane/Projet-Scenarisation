@@ -28,7 +28,6 @@ export class SecondPageComponent implements OnInit {
       'cheminImage1',
       'cheminImage2',
       'cheminImage3',
-
     ]
   constructor(private dialogRef:MatDialog) { }
   openDialog(){
