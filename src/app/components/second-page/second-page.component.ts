@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import {MatDialog, MatDialogModule} from '@angular/material/dialog';
 import { DispositionComponent } from '../disposition/disposition.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatIconModule} from '@angular/material/icon';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faPen, faTrash } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-second-page',
@@ -8,6 +12,9 @@ import { DispositionComponent } from '../disposition/disposition.component';
   styleUrls: ['./second-page.component.scss']
 })
 export class SecondPageComponent implements OnInit {
+  faTrash = faTrash;
+  faPencil = faPen;
+
     cheminImage1:any="assets/img/plus.png";
     cheminImage2:any="assets/img/plus.png";
     cheminImage3:any="assets/img/plus.png";

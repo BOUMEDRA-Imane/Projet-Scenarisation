@@ -5,34 +5,34 @@
         <div class="disp">
             <div class="ajouter">
                 <img class="plus" [src]="disposition1" id="dispo1" />
-                <input type="radio" class="check" id="dis1" name="disposition">
+                <input type="radio" class="check" id="dis1" name="disposition" required>
             </div>
         </div>
         <div class="disp">
             <div class="ajouter">
                 <img class="plus" [src]="disposition2" id="dispo2" />
-                <input type="radio" id="dis2" class="check" name="disposition">
+                <input type="radio" id="dis2" class="check" name="disposition" required>
 
             </div>
         </div>
         <div class="disp">
             <div class="ajouter">
                 <img class="plus" [src]="disposition3" id="dispo3" />
-                <input type="radio" class="check" id="dis3" name="disposition">
+                <input type="radio" class="check" id="dis3" name="disposition" required>
 
             </div>
         </div>
         <div class="disp">
             <div class="ajouter">
                 <img class="plus" [src]="disposition4" id="dispo4" />
-                <input type="radio" class="check" id="dis4" name="disposition">
+                <input type="radio" class="check" id="dis4" name="disposition" required>
 
             </div>
         </div>
         <div class="disp">
             <div class="ajouter">
                 <img class="plus" [src]="disposition5" id="dispo5" />
-                <input type="radio" class="check" id="dis5" name="disposition">
+                <input type="radio" class="check" id="dis5" name="disposition" required>
 
             </div>
         </div>
@@ -41,22 +41,22 @@
     <div class="d1">
         <div class="complementaire1">
             <label for="time">Préciser la durée</label>
-            <input type="number" class="time" name="time" placeholder="00" min="0" max="30"> min
+            <input type="number" class="time" name="time" placeholder="00" min="0" max="30" required> min
 
-            <input type="number" class="time" name="time" placeholder="00" min="0" max="59"> sec
+            <input type="number" class="time" name="time" placeholder="00" min="0" max="59" required> sec
         </div>
 
         <div class="complementaire2">
             <label for="story">Ajouter votre script</label>
 
-            <textarea id="story" name="story" rows="5" cols="60">
+            <textarea id="story" name="story" rows="5" cols="60" required>
         </textarea>
         </div>
     </div>
-    <audio controls class="audio">
+    <!-- <audio controls class="audio">
         <source type="audio/ogg">
         <source type="audio/mpeg">
-    </audio>
+    </audio> -->
     <div class="button">
         <button type="submit" class="btn2" (click)="onNoPop()">Annuler</button>
     </div>

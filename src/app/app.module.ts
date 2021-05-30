@@ -19,6 +19,9 @@ import { CapsulesComponent } from './components/capsules/capsules.component';
 import { PopUpComponent } from './components/pop-up/pop-up.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DispositionComponent } from './components/disposition/disposition.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 firebase.initializeApp(environment.firebaseConfig);
 @NgModule({
   declarations: [
@@ -31,7 +34,6 @@ firebase.initializeApp(environment.firebaseConfig);
     CapsulesComponent,
     PopUpComponent,
     DispositionComponent,
-    
   ],
 
   imports: [
@@ -43,6 +45,8 @@ firebase.initializeApp(environment.firebaseConfig);
     DragDropModule,
     BrowserAnimationsModule,
     MatDialogModule, 
+    MatExpansionModule,
+    FontAwesomeModule
 
     ],
   providers: [],

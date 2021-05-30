@@ -17,3 +17,33 @@
     width:450px;
     margin-left: 20px;
 }
+.btn1{
+    border-radius: 12px;
+    border: rgb(0, 196, 59) 1px solid;
+    color: white;
+    background-color:rgb(0, 204, 34);
+    box-shadow: 5px 10px 18px #888888;
+    width: 110px;
+    margin-left:100;
+    margin-top: 20px;
+    margin-right: 5px;
+    height: 50px;
+    font-size: 20px;
+    float: right;
+    background-repeat: no-repeat;
+    
+}
+.btn2{
+    border-radius: 12px;
+    border: rgb(245, 78, 0) 1px solid;
+    color: white;
+    background-color:rgb(248, 40, 3);
+    box-shadow: 5px 10px 18px #888888;
+    width: 110px;
+    margin-left:100;
+    margin-top: 20px;
+    height: 50px;
+    font-size: 20px;
+    float: left;
+    position: absolute;
+}
