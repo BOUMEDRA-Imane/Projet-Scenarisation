@@ -1,5 +1,18 @@
-<div class="ajouter">
-    <a (click)="openDialog()"><img class="plus" [src]="cheminImage1"   />
-    <h3>Ajouter une capsule</h3></a>
+<div class="row">
+    <div class="col-lg-2" *ngFor="let capsule of capsules">
+        <div class="ajouter">
+            
+            <h3 routerLink="/second-page/{{capsule.id}}">{{capsule.capsule}}</h3>
+            <button class="btn btn-warning float-left" (click)="editDialog(capsule.id)">Edit</button>
+            <button class="btn btn-danger float-right" (click)="delete(capsule.id)">Delete</button>
+        </div>
+    </div>
+    <div class="col-lg-2">
+        <div class="ajouter">
+            <a (click)="openDialog()"><img class="plus" [src]="cheminImage1"   />
+            <h3>Ajouter une capsule</h3></a>
+        </div>
+    </div>
 </div>
+
 <app-footer></app-footer>

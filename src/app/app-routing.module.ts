@@ -11,7 +11,7 @@ const routes: Routes = [
     pathMatch: 'full', //default
     redirectTo: 'main'
   },
-  {path:'second-page',component:SecondPageComponent },
+  {path:'second-page/:capsuleId',component:SecondPageComponent },
   {path:'main',component:MainComponent},
   {path:'create-account',component:CreateAccountComponent},
   {path:'capsules',component:CapsulesComponent}

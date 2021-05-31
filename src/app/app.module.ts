@@ -21,6 +21,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DispositionComponent } from './components/disposition/disposition.component';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AngularFireModule } from '@angular/fire';
+
+import { AngularFirestoreModule } from '@angular/fire/firestore';
 
 firebase.initializeApp(environment.firebaseConfig);
 @NgModule({
@@ -46,7 +49,9 @@ firebase.initializeApp(environment.firebaseConfig);
     BrowserAnimationsModule,
     MatDialogModule, 
     MatExpansionModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule
 
     ],
   providers: [],

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "pfe-application-406c5": {
+      "hosting": {
+        "pfeapp": [
+          "pfe-application-406c5"
+        ]
+      }
+    }
+  }
+}

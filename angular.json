@@ -90,7 +90,6 @@
               "src/favicon.ico",
               "src/assets"
             ],
-           
             "styles": [
               "src/styles.scss"
             ],
@@ -121,6 +120,10 @@
               "devServerTarget": "pfeapp:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     }

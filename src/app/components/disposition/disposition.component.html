@@ -1,65 +1,66 @@
-<div class="conception">
-    <h1>Choisissez votre disposition<button (click)="onNoPop()" class="fermeture">&times;</button></h1>
-
-    <div class="capsule">
-        <div class="disp">
-            <div class="ajouter">
-                <img class="plus" [src]="disposition1" id="dispo1" />
-                <input type="radio" class="check" id="dis1" name="disposition" required>
+<form #disp="ngForm" (ngSubmit)="save(disp)">
+    <div class="conception">
+        <h1>Choisissez votre disposition<button (click)="onNoPop()" class="fermeture" >&times;</button></h1>
+    
+        <div class="capsule">
+            <div class="disp">
+                <div class="ajouter">
+                    <img class="plus" [src]="disposition1" id="dispo1" />
+                    <input type="radio" class="check" value="dis1" id="dis1" name="disposition" [(ngModel)]="fetchedData.disposition" required>
+                </div>
+            </div>
+            <div class="disp">
+                <div class="ajouter">
+                    <img class="plus" [src]="disposition2" id="dispo2" />
+                    <input type="radio" id="dis2" value="dis2" class="check" name="disposition"  [(ngModel)]="fetchedData.disposition" required>
+    
+                </div>
+            </div>
+            <div class="disp">
+                <div class="ajouter">
+                    <img class="plus" [src]="disposition3" id="dispo3" />
+                    <input type="radio" class="check" value="dis3" id="dis3" name="disposition"  [(ngModel)]="fetchedData.disposition" required>
+    
+                </div>
+            </div>
+            <div class="disp">
+                <div class="ajouter">
+                    <img class="plus" [src]="disposition4" id="dispo4" />
+                    <input type="radio" class="check" value="dis4" id="dis4" name="disposition"  [(ngModel)]="fetchedData.disposition" required>
+    
+                </div>
+            </div>
+            <div class="disp">
+                <div class="ajouter">
+                    <img class="plus" [src]="disposition5" id="dispo5" />
+                    <input type="radio" class="check" value="dis5" id="dis5" name="disposition"  [(ngModel)]="fetchedData.disposition" required>
+    
+                </div>
             </div>
         </div>
-        <div class="disp">
-            <div class="ajouter">
-                <img class="plus" [src]="disposition2" id="dispo2" />
-                <input type="radio" id="dis2" class="check" name="disposition" required>
-
+    
+        <div class="d1">
+            <div class="complementaire1">
+                <label for="time">Préciser la durée</label>
+                <input type="number" class="time" name="time1" [(ngModel)]="fetchedData.time1" placeholder="00" min="0" max="30" required> min
+    
+                <input type="number" class="time" name="time2"  [(ngModel)]="fetchedData.time2" placeholder="00" min="0" max="59" required> sec
+            </div>
+    
+            <div class="complementaire2">
+                <label for="story">Ajouter votre script</label>
+    
+                <textarea id="story" name="story"  [(ngModel)]="fetchedData.story" rows="5" cols="60" required>
+            </textarea>
             </div>
         </div>
-        <div class="disp">
-            <div class="ajouter">
-                <img class="plus" [src]="disposition3" id="dispo3" />
-                <input type="radio" class="check" id="dis3" name="disposition" required>
-
-            </div>
+        <!-- <audio controls class="audio">
+            <source type="audio/ogg">
+            <source type="audio/mpeg">
+        </audio> -->
+        <div class="button">
+            <button class="btn2" (click)="onNoPop()">Annuler</button>
         </div>
-        <div class="disp">
-            <div class="ajouter">
-                <img class="plus" [src]="disposition4" id="dispo4" />
-                <input type="radio" class="check" id="dis4" name="disposition" required>
-
-            </div>
-        </div>
-        <div class="disp">
-            <div class="ajouter">
-                <img class="plus" [src]="disposition5" id="dispo5" />
-                <input type="radio" class="check" id="dis5" name="disposition" required>
-
-            </div>
-        </div>
+        <button [disabled]="!disp.valid" type="submit" class="btn1">valider</button>
     </div>
-
-    <div class="d1">
-        <div class="complementaire1">
-            <label for="time">Préciser la durée</label>
-            <input type="number" class="time" name="time" placeholder="00" min="0" max="30" required> min
-
-            <input type="number" class="time" name="time" placeholder="00" min="0" max="59" required> sec
-        </div>
-
-        <div class="complementaire2">
-            <label for="story">Ajouter votre script</label>
-
-            <textarea id="story" name="story" rows="5" cols="60" required>
-        </textarea>
-        </div>
-    </div>
-    <!-- <audio controls class="audio">
-        <source type="audio/ogg">
-        <source type="audio/mpeg">
-    </audio> -->
-    <div class="button">
-        <button type="submit" class="btn2" (click)="onNoPop()">Annuler</button>
-    </div>
-    <button type="submit" class="btn1">valider</button>
-
-</div>
+</form>

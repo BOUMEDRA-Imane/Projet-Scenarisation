@@ -1,10 +1,11 @@
-<div>
+<form #capsuleForm="ngForm" (ngSubmit)="save(capsuleForm)">
+  <div>
     <label> Nom du capsule</label>
-    <input class="capsule" type="text" name="capsule" placeholder="">
+    <input class="capsule" type="text" name="capsule" [(ngModel)]="fetchedData.capsule"  placeholder="" required>
 </div>
 <div >
     <label for="field">FILIERE
-        <select class="filiere">
+        <select class="filiere" [(ngModel)]="fetchedData.filiere" name="filiere" required>
           <option value=""></option>
             <option value="Mathemmatique">Techniques de management</option>
             <option value="Mathemmatique">Génie électrique</option>
@@ -32,9 +33,10 @@
     </label>
     <div>
     <label> MATIERE</label>
-    <input class="matiere" type="text" name="matiere" placeholder="entrer le nom de la matiere">
+    <input class="matiere" [(ngModel)]="fetchedData.matiere" type="text" name="matiere" ngModel placeholder="entrer le nom de la matiere" required>
 </div>
 </div>
 <button (click)="onNoClick()" class="btn2">Annuler</button>
-<a routerLink="second-page">
-<button (click)="onNoClick()" class="btn1" >valider</button></a>
+
+<button [disabled]="!capsuleForm.valid" type="submit" class="btn1" >valider</button>
+</form>
